@@ -7,12 +7,8 @@ export default class App extends Component {
     return (
         <div className="container">
           <header>
-            <h1>Todo List</h1>
+            <h1>This is our app</h1>
           </header>
-
-          <ul>
-            {this.renderTasks()}
-          </ul>
         </div>
     );
   }
