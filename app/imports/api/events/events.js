@@ -1,10 +1,15 @@
 import { Mongo } from 'meteor/mongo';
+import SimpleSchema from 'simpl-schema';
 
-//event ID
-//event name
-//event description
-//event start date time
-//event end date time
-//event type?
+const eventSchema = new SimpleSchema({
+  event_id: Number,
+  eventName: String,
+  eventDescription: String,
+  eventStartDate: Date,
+  eventEndDate: Date,
+  eventType: String, // ex. Athletic, fairs, etc.
+});
 
 export const Events = new Mongo.Collection('events');
+
+Events.attachSchema(eventSchema);
