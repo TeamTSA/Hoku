@@ -7,4 +7,4 @@ import { Mongo } from 'meteor/mongo';
 //last name
 
 
-export const users = new Mongo.Collection('users');
+export const Users = new Mongo.Collection('users');

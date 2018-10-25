@@ -7,4 +7,4 @@ import { Mongo } from 'meteor/mongo';
 //event end date time
 //event type?
 
-export const events = new Mongo.Collection('events');
+export const Events = new Mongo.Collection('events');

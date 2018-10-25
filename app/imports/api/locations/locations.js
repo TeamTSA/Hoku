@@ -4,4 +4,4 @@ import { Mongo } from 'meteor/mongo';
 //location coordinates
 //location name (ex. Keller 201)
 
-export const users = new Mongo.Collection('locations');
+export const Locations = new Mongo.Collection('locations');

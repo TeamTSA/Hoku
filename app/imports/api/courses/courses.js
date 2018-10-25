@@ -6,4 +6,4 @@ import { Mongo } from 'meteor/mongo';
 //course description
 //course semester
 
-export const users = new Mongo.Collection('courses');
+export const Courses = new Mongo.Collection('courses');

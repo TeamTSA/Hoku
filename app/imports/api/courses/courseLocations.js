@@ -3,4 +3,4 @@ import { Mongo } from 'meteor/mongo';
 //course CRN
 //course location ID
 
-export const users = new Mongo.Collection('courseLocations');
+export const CourseLocations = new Mongo.Collection('courseLocations');
