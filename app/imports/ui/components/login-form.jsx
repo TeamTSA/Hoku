@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
 
 // App component - represents the whole app
-export default class App extends Component {
+export default class login-form extends Component {
 
   render() {
     return (
