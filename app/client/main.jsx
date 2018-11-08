@@ -1,9 +1,3 @@
-import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
-
-import App from '../imports/ui/Layouts/App.jsx';
-
-Meteor.startup(() => {
-  render(<App />, document.getElementById('render-target'));
-});
+import '/imports/startup/both';
+import '../imports/startup/client/';
+import './style.css';
