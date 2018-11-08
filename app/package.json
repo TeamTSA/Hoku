@@ -1,29 +1,34 @@
 {
   "name": "hoku",
   "private": true,
-  "scripts": {
-    "start": "meteor run",
-    "test": "meteor test --once --driver-package meteortesting:mocha",
-    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
-    "visualize": "meteor --production --extra-packages bundle-visualizer"
-  },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.55",
-    "meteor-node-stubs": "^0.4.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-router-dom": "^4.3.1",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.83.0",
-    "simpl-schema": "^1.5.3",
-    "uniforms": "^1.27.0",
-    "uniforms-semantic": "^1.27.0"
+    "@babel/runtime": "^7.0.0-beta.39",
+    "bcrypt": "^1.0.3",
+    "classnames": "^2.2.5",
+    "meteor-node-stubs": "^0.3.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "semantic-ui-css": "^2.3.0",
+    "semantic-ui-react": "^0.77.2",
+    "simpl-schema": "^1.4.2",
+    "uniforms": "^1.23.1",
+    "uniforms-semantic": "^1.23.1"
   },
-  "meteor": {
-    "mainModule": {
-      "client": "client/main.jsx",
-      "server": "server/main.js"
-    },
-    "testModule": "tests/main.js"
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-meteor": "^4.2.1",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "scripts": {
+    "start": "meteor --no-release-check --settings ../config/settings.development.json",
+    "lint": "eslint --quiet ./imports"
   }
 }
