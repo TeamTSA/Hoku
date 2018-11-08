@@ -11,13 +11,12 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = { marginBottom: '10px' };
     return (
-      <Menu style={menuStyle} attached="top" borderless inverted color= 'brown'>
+      <Menu style={menuStyle} attached="top" borderless inverted color= 'black'>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Header inverted as='h1'>digits</Header>
+          <Header inverted as='h1'>Hoku</Header>
         </Menu.Item>
         {this.props.currentUser ? (
-            [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Contact</Menu.Item>,
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Contacts</Menu.Item>]
+            [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Map</Menu.Item>
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
             <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
@@ -26,7 +25,7 @@ class NavBar extends React.Component {
           {this.props.currentUser === '' ? (
             <Dropdown text="Login" pointing="top right" icon={'user'}>
               <Dropdown.Menu>
-                <Dropdown.Item icon="user" text="Sign In" as={NavLink} exact to="/signin"/>
+                <Dropdown.Item icon="user" text="Login" as={NavLink} exact to="/login-form"/>
                 <Dropdown.Item icon="add user" text="Sign Up" as={NavLink} exact to="/signup"/>
               </Dropdown.Menu>
             </Dropdown>
