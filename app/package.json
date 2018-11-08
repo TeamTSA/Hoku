@@ -2,7 +2,7 @@
   "name": "hoku",
   "private": true,
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.39",
+    "@babel/runtime": "^7.1.5",
     "bcrypt": "^1.0.3",
     "classnames": "^2.2.5",
     "meteor-node-stubs": "^0.3.3",
@@ -11,12 +11,12 @@
     "react-addons-pure-render-mixin": "^15.6.2",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "semantic-ui-css": "^2.3.0",
+    "react-router-dom": "^4.3.1",
+    "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.77.2",
-    "simpl-schema": "^1.4.2",
+    "simpl-schema": "^1.5.3",
     "uniforms": "^1.23.1",
-    "uniforms-semantic": "^1.23.1"
+    "uniforms-semantic": "^1.27.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
